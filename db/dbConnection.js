@@ -14,19 +14,4 @@ function connectToDB() {
         })
 }
 
-// class DBConnect {
-//     dbConnectionString = process.env.DB_CONNECTION_STRING
-
-//     constructor() {
-//         mongoose.connect(dbConnectionString)
-//             .then((res) => {
-//                 console.log('connected to MongoDB atlas')
-//             })
-//             .catch((err) => {
-//                 console.log(`MongoDB Error: ${err}`)
-//             })
-//     }
-
-// }
-
 module.exports = connectToDB
