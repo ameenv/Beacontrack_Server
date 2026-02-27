@@ -222,20 +222,3 @@ const aiChatBot = async (req, res) => {
 }
 
 module.exports = aiChatBot
-
-
-/**
- * 
- import fs from "fs";
-// Save to disk
-fs.writeFileSync("chat-history.json", JSON.stringify(history, null, 2));
-
-// Load it next time
-const history = JSON.parse(fs.readFileSync("chat-history.json", "utf-8"));
-
- await ChatHistory.updateOne(
-  { userId },
-  { $set: { history: updatedHistory } },
-  { upsert: true }
-);
- */
